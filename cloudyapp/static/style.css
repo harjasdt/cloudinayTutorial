@@ -1,0 +1,59 @@
+.main{
+    text-align: center;
+    margin-top: 30px !important;
+    margin:auto ;
+    padding-bottom: 50px !important;
+    padding: 35px;
+    width:40%;
+    background: rgba(225, 225, 225, 0.7);
+    box-shadow: rgb(0, 0, 0,0.5);
+    border-radius: 10px;
+}
+
+body{
+    background:url("https://webgradients.com/public/webgradients_png/008%20Rainy%20Ashville.png");
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: repeat !important;
+    background-attachment: fixed;
+    text-align: center !important;
+}
+
+input[type="text"],
+input[type="text"]:focus   
+{
+         background: transparent;
+         border-top: none;
+         border-left: none;
+         border-right: none;
+         border-bottom: 1px solid;
+         outline-width: 0;
+         color:black;
+}
+
+
+input[type="file"],
+input[type="file"]:focus   
+{
+         background: transparent;
+         border: none;
+         outline-width: 0;
+         color:black;
+}
+
+.alert{
+    width: 50%;
+    margin: auto;
+}
+img{
+    height: 150px;
+    width: 150px;
+
+}
+.card{
+    height: 150px;
+    width: 150px;
+    background:rgba(255, 255, 255, 0);
+    margin-bottom: 125px;
+}
+sudo nginx -t && sudo systemctl restart nginx

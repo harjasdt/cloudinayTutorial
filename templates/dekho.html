@@ -1,0 +1,30 @@
+
+
+{% extends 'base.html' %}
+{% block all %}active{% endblock all%}
+{% block zero %}<title>Cloudinary Tutorial-All</title>{% endblock %}
+{% block one %}
+
+
+{% if messages %}
+{% for message in messages %}
+  <small id="emailHelp" class="form-text text-muted">{{ message }}</small>
+{% endfor %}
+{% endif %}
+<div class="container">
+    <div class="row">
+        {% for pic in photo %}
+      <div class="col-lg-3 col-md-3 col-sm-12 mycard">
+        
+        <div class="card" >
+            <img src="{{pic.cc.url}}" alt="fish">
+            <div class="card-body">
+              <h5 class="card-title">{{pic.title}}</h5>
+              <a href="remove/{{pic.pk}}"><button name="cross" type="submit" class="btn btn-sm btn-danger">Delete</button></a>
+            </div>
+       </div>
+    </div>
+       {% endfor %}
+    </div>
+</div>
+{% endblock %}
