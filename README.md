@@ -1,83 +1,39 @@
-# Step 1: Setting up the Development Environment
+# How to Use
 
-## Checking if Python is installed
+## Install Python and check the version using
 ```bash
   >python --version
 ```
 
-```bash
-  >pip --version
-```
-## Installing Virtual Environment
-```bash
-  >pip install virtualenv
-```
+## Clone This Repo
 
 ```bash
-  >virtualenv --version
+  git clone https://github.com/harjasdt/cloudinayTutorial.git
+```
+A cloudinayTutorial Directory will be created(NOTE: Their is a missing r in this repo name)
+
+## Install requirements.txt
+Navigate to cloudinayTutorial and install all dependencies by
+```bash
+  pip install -r requirements.txt
 ```
 
-## Creating a New Directory
-```bash
-  >mkdir cloud
-```
-
-Navigate inside the cloud Directory
-```bash
-  >cd cloud
-```
-## Creating a Virtual Environment
-```bash
-  >virtualenv env
-```
-You should see a self generated folder named "env" inside cloud
-## Activating our Virtual Environment
-```bash
-  >env\Scripts\activate
-```
-Now you should see name of your virtual environment at the starting of each line
-```bash
-  (env) PS D:\ATOMPROJECTS\cloud> 
-```
-
-To exit your virtual environment just use the deactivate command and environment name will disappear
-```bash
-  >deactivate
-```
-
-## Finally Installing Django
+## Changing Settings.py 
+Create your Cloudinary Account and add the following Authentication keys to settings.py(located at cloudinayTutorial/cloudinaryTutorial Directory)
 
 ```bash
-  >pip install django
+cloudinary.config( 
+  cloud_name = "YOUR_CLOUD_NAME", 
+  api_key = "YOUR_API_KEY", 
+  api_secret = "YOUR_API_SECRET" 
+)
 ```
 
-To Create a new project use the following command inside the cloud directory
-```bash
-  >django startproject cloudinaryTutorial
-```
-Now you should see a new directory named cloudinaryTutorial(project name) inside cloud directory.
-
-
-```bash
-  >cd cloudinaryTutorial
-```
-
-Create a new app after entering your project directory named cloudy
+## Running locally
+Navigate to cloudinayTutorial
 
 ```bash
-  >python manage.py startapp cloudy
+  python managye.py runserver
 ```
 
-# Step 2: Configuring our cloudinaryTutorial project
-
-## Settings.py 
-1. Navigate to settings.py which is located at cloud>cloudinaryTutorial>cloudinaryTutorial>settings.py
-
-```bash
-  python manage.py startapp cloudy
-```
- 
-At the time of writing, it is Python 3.9.7. You might have a different version from mine, and that’s fine. As long as you see the Python version logged, Python is installed on your system.
-
-Now that you’ve confirmed Python is installed on your system, you will upgrade pip.
-## Step 3  - Creating a Project Directory
+Go to http://127.0.0.1:8000/ to enjoy your own google cloud
