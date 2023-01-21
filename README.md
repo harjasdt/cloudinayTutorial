@@ -1,5 +1,8 @@
 # cloudinayTutorial
 
+# Part 1: Setting up the Environment
+
+## Checking if Python is installed
 ```bash
   >python --version
 ```
