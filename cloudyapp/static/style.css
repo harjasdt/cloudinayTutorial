@@ -56,4 +56,3 @@ img{
     background:rgba(255, 255, 255, 0);
     margin-bottom: 125px;
 }
-sudo nginx -t && sudo systemctl restart nginx

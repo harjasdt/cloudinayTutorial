@@ -16,17 +16,13 @@ import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 
-# cloudinary.config( 
-#   cloud_name = "YOUR_CLOUD_NAME", 
-#   api_key = "YOUR_API_KEY", 
-#   api_secret = "YOUR_API_SECRET" 
-# )
-
 cloudinary.config( 
-  cloud_name = "dgszgnoe2", 
-  api_key = "642792483547992", 
-  api_secret = "JpS9BcXsKPCaF8D0VaxEFkPVhxk" 
+  cloud_name = "YOUR_CLOUD_NAME", 
+  api_key = "YOUR_API_KEY", 
+  api_secret = "YOUR_API_SECRET" 
 )
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
